@@ -1,4 +1,5 @@
-﻿Select emp.LastName as [Employee which worked with Western]
+﻿Select distinct 
+emp.LastName as [Employee which worked with Western]
 From dbo.Employees as emp JOIN 
 	dbo.EmployeeTerritories as et
 	ON emp.EmployeeID = et.EmployeeID

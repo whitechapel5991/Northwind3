@@ -1,7 +1,7 @@
 ﻿GO
 use "Northwind"
 go
-if exists (select * from sysobjects where id = object_id('dbo.Region') and sysstat & 0xf = 3)
+if exists (select * from sysobjects where id = object_id('dbo.Region'))
 EXEC sp_rename 'Region', 'Regions'
 go
 IF NOT EXISTS(

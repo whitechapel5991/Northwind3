@@ -1,7 +1,7 @@
 GO
 use "Northwind"
 go
-if not exists (select * from sysobjects where id = object_id('dbo.EmployeesCreditCard') and sysstat & 0xf = 3)
+if not exists (select * from sysobjects where id = object_id('dbo.EmployeesCreditCard'))
 CREATE TABLE "EmployeesCreditCard" (
 	"CreditCardID" "int" IDENTITY (1, 1) NOT NULL ,
 	"CardNumber" "int" NOT NULL ,
